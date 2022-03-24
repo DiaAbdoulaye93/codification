@@ -13,8 +13,13 @@ class SignUp extends Component
     public $password = '';
 
     protected $rules = [
-        'name' => 'required|min:3',
+        'ine' => 'required|min:3',
+        'nom' => 'required|min:3',
+        'prenom'=>'required|min:3',
+        'telephone'=>'required|min:3',
+        'username'=>'required|min:3|unique:users',
         'email' => 'required|email:rfc,dns|unique:users',
+        'username'=>'required|min:3',
         'password' => 'required|min:6'
     ];
 

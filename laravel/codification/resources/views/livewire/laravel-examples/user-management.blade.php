@@ -13,7 +13,7 @@
             <div class="card mb-4 mx-4">
                 <div class="card-header pb-0">
                     <div class="d-flex flex-row justify-content-between">
-                        <div>
+                        <div> 
                             <h5 class="mb-0">All Users</h5>
                         </div>
                         <a href="#" class="btn bg-gradient-primary btn-sm mb-0" type="button">+&nbsp; New User</a>
