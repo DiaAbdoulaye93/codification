@@ -25,6 +25,11 @@ class SignUp extends Component
         'email' => 'required|email:rfc,dns|unique:users',
         'password' => 'required|min:6'
     ];
+    protected $messages= [
+        'required' => 'Le champ :attribute est obligatoire',
+        'min' => 'Le champ :attribute doit contenire au minimum :min caractres',
+        'max' => 'Le champ :attribute doit contenire au maximum :max caractres',
+    ];
 
     public function mount() {
         if(auth()->user()){

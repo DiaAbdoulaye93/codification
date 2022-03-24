@@ -67,22 +67,24 @@
                       <div class="card-body">
 
                           <form wire:submit.prevent="register" action="#" method="POST" role="form text-left">
+                          (<span class="text-danger text-bolder">*</span>) champ obligatoire <br><br>
                               <div class="mb-3 row">
-                                  <div class="col-md-4">
+                              
+                                  <div class="col-md-4"><span class="text-danger">*</span>
                                       <div class="@error('ine') border border-danger rounded-3 @enderror">
-                                          <input wire:model="ine" name='ine' type="text" class="form-control" placeholder="1345009..." aria-label="ine">
+                                          <input wire:model="ine" name='ine' type="text" class="form-control" placeholder="1345009..." aria-label="ine" required>
                                       </div>
                                       @error('ine') <div class="text-danger">{{ $message }}</div> @enderror
                                   </div>
                                   <div class="col-md-4">
-                                      <div class="@error('name') border border-danger rounded-3  @enderror">
-                                          <input wire:model="nom" name='nom' type="text" class="form-control" placeholder="Nom" aria-label="Nom" aria-describedby="email-addon">
+                                      <div class="@error('name') border border-danger rounded-3  @enderror"><span class="text-danger">*</span>
+                                          <input wire:model="nom" name='nom' type="text" class="form-control" placeholder="Nom" aria-label="Nom" aria-describedby="email-addon" required>
                                       </div>
                                       @error('nom') <div class="text-danger">{{ $message }}</div> @enderror
                                   </div>
                                   <div class="col-md-4">
-                                      <div class="@error('prenom') border border-danger rounded-3 @enderror">
-                                          <input wire:model="prenom" type="text" class="form-control" placeholder="Abdoulaye" aria-label="prenom">
+                                      <div class="@error('prenom') border border-danger rounded-3 @enderror"><span class="text-danger">*</span>
+                                          <input wire:model="prenom" type="text" class="form-control" placeholder="Abdoulaye" aria-label="prenom" required>
                                       </div>
                                       @error('prenom') <div class="text-danger">{{ $message }}</div> @enderror
                                   </div>
@@ -90,28 +92,28 @@
                               </div>
                               <div class="mb-3 row">
                                   <div class="col-md-6">
-                                      <div class="@error('telephone') border border-danger rounded-3  @enderror">
-                                          <input wire:model="telephone" type="text" class="form-control" placeholder="+221 77 .." aria-label="telephone">
+                                      <div class="@error('telephone') border border-danger rounded-3  @enderror"><span class="text-danger">*</span>
+                                          <input wire:model="telephone" type="text" class="form-control" placeholder="+221 77 .." aria-label="telephone" required>
                                       </div>
                                       @error('telephone') <div class="text-danger">{{ $message }}</div> @enderror
                                   </div>
                                   <div class="col-md-6">
-                                      <div class="@error('username') border border-danger rounded-3 @enderror">
-                                          <input wire:model="username" type="text" class="form-control" placeholder="username" aria-label="username">
+                                      <div class="@error('username') border border-danger rounded-3 @enderror"><span class="text-danger">*</span>
+                                          <input wire:model="username" type="text" class="form-control" placeholder="username" aria-label="username" required>
                                       </div>
                                       @error('username') <div class="text-danger">{{ $message }}</div> @enderror
                                   </div>
                               </div>
                               <div class="mb-3 row">
                                   <div class="col-md-6">
-                                      <div class="@error('email') border border-danger rounded-3  @enderror">
+                                      <div class="@error('email') border border-danger rounded-3  @enderror"><span class="text-danger">*</span>
                                           <input wire:model="email" type="email" class="form-control" placeholder="email" aria-label="Nom" aria-describedby="email-addon">
                                       </div>
                                       @error('email') <div class="text-danger">{{ $message }}</div> @enderror
                                   </div>
                                   <div class="col-md-6">
-                                      <div class="@error('password') border border-danger rounded-3 @enderror">
-                                          <input wire:model="password" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="password-addon">
+                                      <div class="@error('password') border border-danger rounded-3 @enderror"><span class="text-danger">*</span>
+                                          <input wire:model="password" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="password-addon" required>
                                       </div>
                                       @error('password') <div class="text-danger">{{ $message }}</div> @enderror
                                   </div>
