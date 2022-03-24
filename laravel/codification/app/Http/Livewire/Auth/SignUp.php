@@ -8,7 +8,11 @@ use Illuminate\Support\Facades\Hash;
 
 class SignUp extends Component
 {
-    public $name = '';
+    public $ine = '';
+    public $nom = '';
+    public $prenom = '';
+    public $telephone = '';
+    public $username = '';
     public $email = '';
     public $password = '';
 
@@ -19,7 +23,6 @@ class SignUp extends Component
         'telephone'=>'required|min:3',
         'username'=>'required|min:3|unique:users',
         'email' => 'required|email:rfc,dns|unique:users',
-        'username'=>'required|min:3',
         'password' => 'required|min:6'
     ];
 
@@ -32,7 +35,11 @@ class SignUp extends Component
     public function register() {
         $this->validate();
         $user = User::create([
-            'name' => $this->name,
+            'ine' => $this->ine,
+            'nom' => $this->nom,
+            'prenom' => $this->prenom,
+            'telephone' => $this->telephone,
+            'username' => $this->username,
             'email' => $this->email,
             'password' => Hash::make($this->password)
         ]);
