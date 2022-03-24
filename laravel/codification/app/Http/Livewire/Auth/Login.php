@@ -7,12 +7,12 @@ use App\Models\User;
 
 class Login extends Component
 {
-    public $email = '';
+    public $username = '';
     public $password = '';
     public $remember_me = false;
 
     protected $rules = [
-        'email' => 'required|email:rfc,dns',
+        'username' => 'required',
         'password' => 'required',
     ];
 
@@ -20,18 +20,18 @@ class Login extends Component
         if(auth()->user()){
             redirect('/dashboard');
         }
-        $this->fill(['email' => 'admin@softui.com', 'password' => 'secret']);
+        $this->fill(['username' => 'lazy', 'password' => 'secret']);
     }
 
     public function login() {
         $credentials = $this->validate();
-        if(auth()->attempt(['email' => $this->email, 'password' => $this->password], $this->remember_me)) {
-            $user = User::where(["email" => $this->email])->first();
+        if(auth()->attempt(['username' => $this->username, 'password' => $this->password], $this->remember_me)) {
+            $user = User::where(["username" => $this->username])->first();
             auth()->login($user, $this->remember_me);
             return redirect()->intended('/dashboard');        
         }
         else{
-            return $this->addError('email', trans('auth.failed')); 
+            return $this->addError('username', trans('auth.failed')); 
         }
     }
 

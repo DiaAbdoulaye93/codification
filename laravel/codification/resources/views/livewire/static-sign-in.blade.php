@@ -10,9 +10,9 @@
                         </div>
                         <div class="card-body">
                             <form role="form text-left">
-                                <label>Email</label>
+                                <label>Username</label>
                                 <div class="mb-3">
-                                    <input type="email" class="form-control" placeholder="Email" aria-label="Email"
+                                    <input type="texte" class="form-control" placeholder="Email" aria-label="Email"
                                         aria-describedby="email-addon">
                                 </div>
                                 <label>Password</label>
