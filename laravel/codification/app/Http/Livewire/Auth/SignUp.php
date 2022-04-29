@@ -29,6 +29,7 @@ class SignUp extends Component
         'required' => 'Le champ :attribute est obligatoire',
         'min' => 'Le champ :attribute doit contenire au minimum :min caractres',
         'max' => 'Le champ :attribute doit contenire au maximum :max caractres',
+        'unique'=> 'Cet email exixste deja dans la base merci de choisir un autre'
     ];
 
     public function mount() {

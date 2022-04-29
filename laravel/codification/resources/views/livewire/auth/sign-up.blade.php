@@ -66,10 +66,10 @@
                       </div>
                       <div class="card-body">
 
-                          <form wire:submit.prevent="register" action="#" method="POST" role="form text-left">
-                          (<span class="text-danger text-bolder">*</span>) champ obligatoire <br><br>
+                          <form wire:submit.prevent="register" action="#" method="POST" role="form text-left" class="shadow">
+                              (<span class="text-danger text-bolder">*</span>) champ obligatoire <br><br>
                               <div class="mb-3 row">
-                              
+
                                   <div class="col-md-4"><span class="text-danger">*</span>
                                       <div class="@error('ine') border border-danger rounded-3 @enderror">
                                           <input wire:model="ine" name='ine' type="text" class="form-control" placeholder="1345009..." aria-label="ine" required>
