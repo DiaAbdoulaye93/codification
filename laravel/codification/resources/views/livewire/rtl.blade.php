@@ -383,7 +383,7 @@
                                   </div>
                               </div>
                               <div class="col-4 text-start">
-                                  <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                  <div class="icon icon-shape bg-gradient-success shadow text-center border-radius-md">
                                       <i class="ni ni-money-coins text-lg opacity-10" aria-hidden="true"></i>
                                   </div>
                               </div>
@@ -405,7 +405,7 @@
                                   </div>
                               </div>
                               <div class="col-4 text-start">
-                                  <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                  <div class="icon icon-shape bg-gradient-success shadow text-center border-radius-md">
                                       <i class="ni ni-world text-lg opacity-10" aria-hidden="true"></i>
                                   </div>
                               </div>
@@ -427,7 +427,7 @@
                                   </div>
                               </div>
                               <div class="col-4 text-start">
-                                  <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                  <div class="icon icon-shape bg-gradient-success shadow text-center border-radius-md">
                                       <i class="ni ni-paper-diploma text-lg opacity-10" aria-hidden="true"></i>
                                   </div>
                               </div>
@@ -449,7 +449,7 @@
                                   </div>
                               </div>
                               <div class="col-4 text-start">
-                                  <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
+                                  <div class="icon icon-shape bg-gradient-success shadow text-center border-radius-md">
                                       <i class="ni ni-cart text-lg opacity-10" aria-hidden="true"></i>
                                   </div>
                               </div>
@@ -477,7 +477,7 @@
                                   </div>
                               </div>
                               <div class="col-lg-4 me-auto ms-0 text-center">
-                                  <div class="bg-gradient-primary border-radius-lg min-height-200">
+                                  <div class="bg-gradient-success border-radius-lg min-height-200">
                                       <img src="../assets/img/shapes/waves-white.svg"
                                           class="position-absolute h-100 top-0 d-md-block d-none" alt="waves">
                                       <div class="position-relative pt-5 pb-4">
@@ -526,7 +526,7 @@
                                   <div class="col-3 py-3 ps-0">
                                       <div class="d-flex mb-2">
                                           <div
-                                              class="icon icon-shape icon-xxs shadow border-radius-sm bg-gradient-primary text-center ms-2 d-flex align-items-center justify-content-center">
+                                              class="icon icon-shape icon-xxs shadow border-radius-sm bg-gradient-success text-center ms-2 d-flex align-items-center justify-content-center">
                                               <svg width="10px" height="10px" viewBox="0 0 40 44" version="1.1"
                                                   xmlns="http://www.w3.org/2000/svg"
                                                   xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -1085,7 +1085,7 @@
                               </div>
                               <div class="timeline-block mb-3">
                                   <span class="timeline-step">
-                                      <i class="ni ni-key-25 text-primary text-gradient"></i>
+                                      <i class="ni ni-key-25 text-success text-gradient"></i>
                                   </span>
                                   <div class="timeline-content">
                                       <h6 class="text-dark text-sm font-weight-bold mb-0">فتح الحزم من أجل التطوير</h6>
@@ -1169,7 +1169,7 @@
               </div>
               <a href="javascript:void(0)" class="switch-trigger background-color">
                   <div class="badge-colors my-2 text-right">
-                      <span class="badge filter bg-gradient-primary active" data-color="primary"
+                      <span class="badge filter bg-gradient-success active" data-color="success"
                           onclick="sidebarColor(this)"></span>
                       <span class="badge filter bg-gradient-dark" data-color="dark" onclick="sidebarColor(this)"></span>
                       <span class="badge filter bg-gradient-info" data-color="info" onclick="sidebarColor(this)"></span>
@@ -1187,9 +1187,9 @@
                   <p class="text-sm">Choose between 2 different sidenav types.</p>
               </div>
               <div class="d-flex">
-                  <button class="btn bg-gradient-primary w-100 px-3 mb-2 active" data-class="bg-transparent"
+                  <button class="btn bg-gradient-success w-100 px-3 mb-2 active" data-class="bg-transparent"
                       onclick="sidebarType(this)">Transparent</button>
-                  <button class="btn bg-gradient-primary w-100 px-3 mb-2 me-2" data-class="bg-white"
+                  <button class="btn bg-gradient-success w-100 px-3 mb-2 me-2" data-class="bg-white"
                       onclick="sidebarType(this)">White</button>
               </div>
               <p class="text-sm d-xl-none d-block mt-2">You can change the sidenav type just on desktop view.</p>
